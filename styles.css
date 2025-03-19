@@ -1,0 +1,187 @@
+/* General Styling */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #ff0080, #ff4d00);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.5s, padding 0.3s;
+    z-index: 1000;
+    border-bottom: 3px solid #ffcc00;
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+/* Navbar Scroll Effect */
+nav.scrolled {
+    background: linear-gradient(90deg, #00bfff, #ff00ff);
+    padding: 10px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background: #ffcc00;
+    color: #0a0a0a;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    background: #ff4d00;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff4d00;
+    transition: 0.3s;
+}
+
+.toggle-btn:hover {
+    background: #ffcc00;
+    color: black;
+    box-shadow: 0 0 15px #ffcc00;
+}
+
+#dark-mode-toggle {
+    margin-left: auto; /* Pushes it to the right */
+    margin-right: 20px; /* Moves it slightly left */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content */
+.content {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+/* Features Section */
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px #ff758c;
+}
+
+.feature-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.feature-card:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Page */
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    border: 2px solid #ff4d00;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background: #ff4d00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* Footer */
+footer {
+     position: relative; /* Remove fixed positioning */
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
